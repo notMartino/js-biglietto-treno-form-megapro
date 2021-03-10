@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: dodgerblue;
+    padding: 20px 50px 40px;
+    color: white;
+    text-align: center;
+}
+
+.white-back{
+    background-color: white;
+    min-height: 100px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: dodgerblue;
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.column{
+    flex-basis: calc(100% / 3);
+}
+.column input, .column select{
+    min-width: 80px;
+    width: 80%;
+}
+
+section:last-child .white-back{
+    text-align: left;
+}
+
+.white-back table{
+    width: 100%;
+    margin: 10px 0;
+    color: black;
+    border-collapse: collapse;
+}
+.white-back table td, .white-back table th{
+    padding: 10px;
+}
+
+.white-back table th:first-child, .white-back table td:first-child{
+    background-color: grey;
+}
+
+label{
+    display: block;
+}

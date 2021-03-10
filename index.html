@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrenItalia</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section>
+            <h2>Calcola il prezzo del tuo biglietto</h2>
+
+            <div class="white-back">
+                <div class="row">
+                    <div class="column">
+                        <label>Nome - Cognome</label>
+                        <input type="text" name="nome" id="name">
+                    </div>
+                    <div class="column">
+                        <label>Km da percorrere</label>
+                        <input type="text" name="km" id="km">
+                    </div>
+                    <div class="column">
+                        <label for="eta">Fascia d'età</label>
+                        <select name="eta" id="eta" required>
+                            <option selected value="">Seleziona un'età</option>
+                            <option value="0">Minorenne</option>
+                            <option value="18">Adulto</option>
+                            <option value="66">Over 65</option>
+                            
+                        </select>
+                    </div>
+                </div>
+
+                <div class="">
+                    <input type="button" id="genera" value="Genera">
+                    <input type="button" id="annulla" value="Annulla">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Il tuo biglietto</h2>
+            <div class="white-back">
+                <span>Dettaglio paseggeri</span>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome passeggero</th>
+                            <th>Offerta</th>
+                            <th>Carrozza</th>
+                            <th>Codice CP</th>
+                            <th>Costo biglietto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="nomeTable"></td>
+                            <td id="offertaTable"></td>
+                            <td id="carrozzaTable"></td>
+                            <td id="codiceTable"></td>
+                            <td id="costoTable"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
