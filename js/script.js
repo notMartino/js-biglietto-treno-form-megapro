@@ -40,7 +40,7 @@ generaBtn.addEventListener('click', function(){
         nomeTable.innerHTML = nomeInput.value;
         carrozzaTable.innerHTML = carrozza;
         codiceTable.innerHTML = cap;
-        costoTable.innerHTML = prezzo + '€';
+        costoTable.innerHTML = prezzo.toFixed(2) + '€';
     }
     else{
         console.log('Inserisci i dati!');
